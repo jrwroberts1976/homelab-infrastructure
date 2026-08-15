@@ -1,0 +1,74 @@
+# Environment and secrets
+.env
+.env.*
+*.env
+secrets/
+**/secrets/
+credentials/
+**/credentials/
+*.key
+*.pem
+*.p12
+*.pfx
+*.jks
+*.keystore
+
+# Local overrides
+*.local
+compose.override.yml
+docker-compose.override.yml
+
+# Runtime and persistent data
+data/
+**/data/
+state/
+**/state/
+*.db
+*.sqlite
+*.sqlite3
+
+# Logs and runtime files
+*.log
+logs/
+**/logs/
+*.pid
+*.sock
+
+# Backups and temporary copies
+*.bak
+*.backup
+*.old
+*backup*
+*old*
+*.tmp
+*.swp
+*~
+
+# Certificates - public certificates may be added deliberately if reviewed
+*.crt
+*.cer
+
+# SSH / credentials
+.ssh/
+**/.ssh/
+id_rsa*
+id_ed25519*
+known_hosts
+
+# Monitoring/runtime storage
+prometheus-data/
+loki-data/
+grafana-data/
+portainer-data/
+
+# OS/editor
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+
+# Build/runtime artefacts
+node_modules/
+build/
+dist/
+target/
